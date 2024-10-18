@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>if,else</title>
+        <style>
+            .nav{
+                width:350px;
+                height:50px;
+                position:fixed;
+                top:10px;
+                left:50%; 
+                display:flex;
+                justify-content:center;
+                align-items:center; 
+                transform:translateX(-50%); 
+                background-color:#e1e1e1;
+            }
+            .clr{
+                width:30px;
+                height:30px;
+                border-radius:50%;
+                background-color:rgb(101, 247, 225);
+                margin-right:5px;
+                border:3px solid #72ff4f ;
+            }
+            .clr:hover {
+                transform:scale(1.2) ;
+            }
+            .clr:nth-child(1){
+                background-color:#000; 
+            }
+            .clr:nth-child(2){
+                background-color:red; 
+            }
+            .clr:nth-child(3){
+                background-color:green; 
+            }
+            .clr:nth-child(4){
+                background-color:blue; 
+            }
+            .clr:nth-child(5){
+                background-color:yellow; 
+            }
+            .size{
+                width: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+        <div class="nav">
+           <select class="slct">
+            <option>Select line size</option>
+            <option value="5">5</option>
+            <option value="50">50</option>
+           <select>
+            <button class="select">select</button>
+           <div class="clr" data-clr="#000" ></div>       
+           <div class="clr" data-clr="red" ></div> 
+           <div class="clr" data-clr="green" ></div> 
+           <div class="clr" data-clr="blue" ></div> 
+           <div class="clr" data-clr="yellow" ></div>   
+           <button class="clear">clear</button>     
+           <button class="save">save</button>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
